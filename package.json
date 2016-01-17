@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/rpandey1234/market#readme",
   "dependencies": {
+    "pg": "4.x",
     "express": "^4.13.3",
-    "ejs": "2.3.3"
+    "ejs": "2.3.3",
+    "cool-ascii-faces": "~1.3.x"
   }
 }

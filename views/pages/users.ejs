@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="container">
+    <h2><%= title %></h2>
+
+    <ul>
+        <% users.forEach(function(user) { %>
+        <li><%= user.id %> - <%= user.full_name %></li>
+        <% }); %>
+    </ul>
+</div>
+
+</body>
+</html>

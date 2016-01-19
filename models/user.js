@@ -8,9 +8,9 @@ module.exports = function(sequelize, DataTypes) {
         last_name: DataTypes.STRING
     }, {
         classMethods: {
-            //associate: function(models) {
-            //    User.hasMany(models.Task)
-            //}
+            associate: function(models) {
+                User.hasMany(models.goods);
+            }
         },
         getterMethods: {
             full_name: function() { return this.first_name + ' ' + this.last_name }

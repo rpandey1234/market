@@ -2,13 +2,11 @@
 
 var express = require('express');
 var pg = require('pg');
-var Sequelize = require('sequelize');
 var models = require("./models");
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
 
 var app = express();
 

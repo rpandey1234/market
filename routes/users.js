@@ -15,7 +15,6 @@ exports.addForm = function(req, res) {
 
 exports.add = function(req, res) {
     console.log(req.body);
-    //debugger;
     models.users.create({
         first_name: req.body.first_name,
         last_name: req.body.last_name
